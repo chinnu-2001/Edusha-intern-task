@@ -73,7 +73,7 @@
   },
   "scripts": {
     "test": "xo && ava && tsd",
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "version": "6.5.0"
 }
