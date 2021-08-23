@@ -1,0 +1,237 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(90deg,#fab4fd,#961fde);
+    width: 100vw;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.container{
+    
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.head h1{
+    margin-left: 28px;
+}
+.head a{
+    background-color: #ffffff;
+    border-style: none;
+    color: black;
+    margin-right: 28px;
+    font-size: larger;
+    padding-top: 6px;
+    text-decoration: none;
+}
+
+.pr img{
+   height: 250px;
+   width: 250px;
+   padding-left: 20px;
+   
+}
+.section1 p{
+    text-align: center;
+    
+}
+
+.section1{
+    
+    padding: 10px;
+    font-size: 12px;
+    background-color: #ffffff;
+    width: 290px;
+    font-weight: bold;
+    border-radius: 2px;
+    height: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+}
+.price{
+    text-align: center;
+    color: white;
+    font-size: larger;
+    background-color: #076ff8  ;
+    border-radius: 4px;
+    padding: 6px 9px 6px 9px;
+    margin: 10px 6px 0 0;
+    
+}
+.section1 .bed button{
+    padding: 6px 9px 6px 9px;
+    margin-top: 9px;
+    margin-left: 5px;
+    background-color: #ff2965;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 4px;
+   border-style: none;
+
+}
+.section1 .bed{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.section1 p{
+    margin-top: 7px;
+}
+.icons{
+    color:#076ff8 ;
+    font-size: 28px;
+    display: flex;
+    justify-content: space-evenly; 
+    background-color: #ffffff;
+    height: 55px;
+    width: 430px;
+    position: relative;
+    top: 110px;
+    left: 37%;
+    border-radius: 15px;
+
+}
+.icons i{
+    padding-top: 10px;
+}
+.model-container{
+    background-color: black;
+    color: white;
+    opacity: 0;
+    pointer-events:none;
+    padding: 30px 50px 30px 50px;
+    width: 250px;
+    position: absolute;
+    left: 39%;
+    top: 39%;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.model-container.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+#close {
+  text-align:center;
+  cursor:pointer;
+  position:absolute;
+  right:20px;
+  top:20px;
+  width:30px;
+  height:30px;
+  background:#fff;
+  color:#222;
+  font-size:25px;
+  font-weight:600;
+  line-height:15px;
+  border-radius:50%;
+}
+ .icons :hover{
+    color: #ff2965;
+    font-size: 38px;
+ }
+
+.cont {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.cont .star-widget input{
+    display: none;
+}
+
+form .btn button{
+    color: #ffffff;
+    padding: 6px 9px 6px 9px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: black;
+    border-style: none;
+    outline: none;
+    transition:all 0.3s ease;
+
+}
+.cont form{
+    display: none;
+}
+input:checked ~ form{
+    display: block;
+}
+
+.star-widget label{
+    padding: 5px;
+    font-size: 25px;
+    color: #ffffff;
+    float: right;
+    transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+    color: #fd4;
+}
+input:checked ~ label{
+    color: #fd4;
+}
+
+input#rate-5:checked ~ label{
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}
+
+/* image slider*/
+.section1 .left-slide, .section1 .right-slide{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color:black;
+    font-size: 25px;
+    top:43%;
+    cursor: pointer;
+   
+  }
+
+  
+.section1 .right-slide{
+    margin-left: 270px;
+}
+.section1 .pr .item img{
+    display: block;
+    height: 250px;
+    width: 250px; 
+    
+}
+
+
+.section1 .pr .item{
+    display: none;
+    position: relative;
+}
+
+.section1 .pr .item.active{
+    display: block;
+}
+
+
+
+

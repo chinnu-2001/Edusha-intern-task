@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(90deg,#fab4fd,#961fde);
+    
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.head h1{
+    margin-left: 28px;
+}
+.head a{
+    background-color: #ffffff;
+    border-style: none;
+    color: black;
+    margin-right: 28px;
+    font-size: larger;
+    padding-top: 6px;
+    text-decoration: none;
+}
+.form{
+    background-color: #ffffff;
+    width: 350px;
+    text-align: center ;
+    border-width: 5px;
+    position: absolute;
+    top: 20%;
+    right: 39%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.form h1{
+    color: black;
+    margin-bottom: 7%;
+}
+.form input{
+    padding: 3% 9% 3% 9%;
+    margin: 1%;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 4px;
+}
+.form button {
+   margin: 15px;
+   padding: 10px 37px;
+   background-color: black;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   
+}
